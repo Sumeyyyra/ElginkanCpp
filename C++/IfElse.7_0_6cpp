@@ -1,0 +1,174 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+
+
+int main()
+{
+
+//if else 
+//Ornek giirilern iki sayiyi karşılaştırarak ekranda a<b b<a yazan kod
+/*
+int a,b;
+cout<<"a:";
+cin>>a;
+cout<<"b:";
+cin>>b;
+
+if(a>b)
+{
+    cout<<endl<<"a>b";
+}
+else if(b>a)
+{
+    cout<<endl<<"b>a";
+}
+else 
+{
+    cout<<endl<<"a=b";
+}
+*/
+
+//Ornek rastgele sayi üreticek sonra kullanıcın o sayiyi tahmşn ettiği sayıya kadar yorumla 
+/*
+int gizli;
+//0 ile 100 arasanda rastegele sayi tahmin etme
+srand(time(0));
+gizli=rand() %100;
+a:
+int sayi;
+cin>>sayi;
+if(sayi<gizli)
+{
+    cout<<"sayi kucuk tekrar dene"<<"\nsayi:"<<gizli;
+    goto a;//isimlendirdiğimiz yere gider!!!
+}
+else if(gizli<sayi)
+{
+    cout<<"sayi buyuk tekrar dene"<<"\nsayi:"<<gizli;
+    goto a;
+}
+else
+{
+    cout<<"tebrikler doğru sayi !!"<<"\nsayi:"<<gizli;
+}*/
+
+//Ornek :if else yapisi ile girrlen 3 sayiyi sıralama
+/*
+int a,b,c;
+cin>>a;
+cin>>b;
+cin>>c;
+int bu,k,o;
+
+if(a>b & a>c)
+{
+bu=a;
+    if(b>c)
+    {
+        o=b;
+        k=c;
+    }
+    else{
+        o=c;
+        k=b;
+    }
+    cout<<bu<<">"<<o<<">"<<k;
+}
+else if(c>b & c>a)
+{
+bu=c;
+    if(a>b)
+    {
+        o=a;
+        k=b;
+    }
+    else{
+        o=b;
+        k=a;
+    }
+    cout<<bu<<">"<<o<<">"<<k;
+}
+else 
+{
+bu=b;
+    if(a>c)
+    {
+        o=a;
+        k=c;
+    }
+    else{
+        o=c;
+        k=a;
+    }
+
+    cout<<bu<<">"<<o<<">"<<k;
+}*/
+
+//ornek :prim hesabi
+/*
+string ad,soy;
+cout<<"Ad:";
+cin>>ad;
+cout<<"Soyad:";
+cin>>soy;
+int saat,satis;
+cout<<"Calisilan saat:";
+cin>>saat;
+cout<<"Satilan ucret:";
+cin>>satis;
+
+int prim,hesap;
+if(satis>=5000)
+{
+    prim=1000;
+}
+else if(satis<5000 & satis>=2500)
+{
+prim=500;
+}
+else{
+    prim=0;
+}
+
+hesap=50;
+cout<<ad<<" "<<soy<<endl;
+cout<<hesap*saat<<"+"<<prim<<"="<<prim+(hesap*saat);
+*/
+
+//ornek: taksimetre
+/*
+int km;
+cout<<"km: ";
+cin>>km;
+float ucret;
+if(km<=100)
+{
+    ucret=km*0.5;
+}
+else
+{
+    ucret=50+((km-100)*0.2);
+}
+
+cout<<"ucret:"<<ucret;*/
+
+//odev : faktoriyel
+/*
+int sayi;
+cin>>sayi;
+int fak=1;
+b:
+if(sayi>0)
+{
+    fak=sayi*fak;
+    sayi--;
+    goto b;   
+}
+
+cout<<endl<<fak;*/
+
+
+}
